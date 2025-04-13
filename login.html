@@ -1,22 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      background-color: #F6F1DE;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #3E3F5B;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #8AB2A6;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #3E3F5B;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #F6F1DE;
+      color: #3E3F5B;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #ACD3A8;
+      border: none;
+      border-radius: 5px;
+      color: #3E3F5B;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #8AB2A6;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: #3E3F5B;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+  <form action="blog.html">
     <h2>Login Page</h2>
 
-    <form action="blog.html" >
-      <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username" required><br><br>
-  
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password" required><br><br>
-  
-      <button>Login</button>
-      <a href="forget.html">Forgot Password?</a>
-    </form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Login</button>
+    <a href="forget.html">Forgot Password?</a>
+  </form>
 </body>
 </html>

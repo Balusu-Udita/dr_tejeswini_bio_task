@@ -1,39 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to MyBlog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to MyBlog</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F6F1DE;
+      color: #3E3F5B;
+    }
+
+    .top-bar {
+      text-align: right;
+      padding: 10px 20px;
+      background-color: #F6F1DE;
+    }
+
+    .top-bar a {
+      color: #3E3F5B;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .top-bar a i {
+      margin-right: 5px;
+    }
+
+    .banner {
+      background-color: #8AB2A6;
+      color: #3E3F5B;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-left: 6px solid #ACD3A8;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h1, h2, h4 {
+      color: #3E3F5B;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ACD3A8;
+      padding-bottom: 5px;
+    }
+
+    h2 i {
+      margin-right: 8px;
+      color: #8AB2A6;
+    }
+
+    .highlight {
+      background-color: #ACD3A8;
+      font-weight: bold;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
 </head>
 <body>
-    <p align="right">
-        <a href="register.html">Register</a>
-        <h1>THE BLOGGING PORTAL</h1>
-        <h4>REGISTER TO THE BLOGGING PORTAL TO READ ENGAGING BLOGS</h4>
-    </p>
+
+  <div class="top-bar">
+    <a href="register.html"><i class="fas fa-user-plus"></i>Register</a>
+  </div>
+
+  <div class="banner">
+    <h1>THE BLOGGING PORTAL</h1>
+    <h4>REGISTER TO THE BLOGGING PORTAL TO READ ENGAGING BLOGS</h4>
+  </div>
+
+  <div class="content">
     <h1>Welcome to My Blogging World</h1>
-  <p>Thoughts, stories, and ideas shared with passion.</p>
+    <p>Thoughts, stories, and ideas shared with passion.</p>
 
-  <h2>About My Blog</h2>
-  <p>
-    This blog is a space where I share my thoughts on life, creativity, and the things that inspire me.
-    Whether it’s about personal growth, tech trends, travel adventures, or casual reflections — it's all here.
-  </p>
+    <h2><i class="fas fa-book-open"></i>About My Blog</h2>
+    <p>
+      This blog is a space where I share my thoughts on life, creativity, and the things that inspire me.
+      Whether it’s about personal growth, tech trends, travel adventures, or casual reflections — it's all here.
+    </p>
 
-  <h2>Why People Love It</h2>
-  <p>
-    Readers come back because the content is <span class="highlight">real, engaging, and thoughtful</span>.
-    I focus on honesty and connection — making each post feel like a conversation.
-  </p>
+    <h2><i class="fas fa-heart"></i>Why People Love It</h2>
+    <p>
+      Readers come back because the content is <span class="highlight">real, engaging, and thoughtful</span>.
+      I focus on honesty and connection — making each post feel like a conversation.
+    </p>
 
-  <h2>About Me</h2>
-  <p>
-    I'm Balusu Udita, someone who finds joy in writing and sharing ideas.
-    This blog is where I express myself, connect with readers, and explore the world through words.
-    Thanks for being here — it means a lot!
-  </p>
-    
-
+    <h2><i class="fas fa-user"></i>About Me</h2>
+    <p>
+      I'm Balusu Udita, someone who finds joy in writing and sharing ideas.
+      This blog is where I express myself, connect with readers, and explore the world through words.
+      Thanks for being here — it means a lot!
+    </p>
+  </div>
 
 </body>
 </html>

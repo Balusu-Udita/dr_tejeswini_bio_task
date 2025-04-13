@@ -1,22 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reset Password</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reset Password</title>
+  <style>
+    body {
+      background-color: #F6F1DE;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #3E3F5B;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #8AB2A6;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 320px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #3E3F5B;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #F6F1DE;
+      color: #3E3F5B;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #ACD3A8;
+      border: none;
+      border-radius: 5px;
+      color: #3E3F5B;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3E3F5B;
+      color: #F6F1DE;
+    }
+  </style>
 </head>
 <body>
+  <form action="login.html">
     <h2>Reset your password</h2>
-    <form action="">
-        <label for="">Email:</label>
-        <input type="email" placeholder="Enter your email" required/><br><br>
-        <label for="">OTP:</label>
-        <input type="password" placeholder="Enter otp" required/><br><br>
-        <label for="">New Password:</label>
-        <input type="password" placeholder="Enter your new password" required/><br><br>
-        <label for="">Confirm Password:</label>
-        <input type="password" placeholder="Confirm your password"required/><br><br>
-        <button><a href="login.html">Reset</a></button>
-    </form>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required />
+
+    <label for="otp">OTP:</label>
+    <input type="password" id="otp" placeholder="Enter OTP" required />
+
+    <label for="newpass">New Password:</label>
+    <input type="password" id="newpass" placeholder="Enter your new password" required />
+
+    <label for="confirmpass">Confirm Password:</label>
+    <input type="password" id="confirmpass" placeholder="Confirm your password" required />
+
+    <button type="submit">Reset</button>
+  </form>
 </body>
 </html>
